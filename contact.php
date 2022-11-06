@@ -15,19 +15,9 @@
   <meta property="og:title" content="monamiのartgallery&work紹介サイト" />
   <meta property="og:description" content="デジタルイラストを作成しています。出展の情報なども随時記載しています。" />
   <meta property="og:image" content="https://www.monami-artgallery.net/images/angel.jpeg" />
-
-  <link rel="icon" href="./images/top2.jpeg">
-  <link rel="stylesheet" href="./css/style.css">
-  <!-- google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
-   <!-- jQueryの読み込み -->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- google adsense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8020517822869630"
-  crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
    <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-DRE10HFZCQ"></script>
   <script>
@@ -37,6 +27,16 @@
 
     gtag('config', 'G-DRE10HFZCQ');
   </script>
+  
+  <link rel="icon" href="./images/top2.webp">
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+  <!-- jQueryの読み込み -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
   <div class="container">
@@ -46,9 +46,10 @@
 
     <div class="contents">
       <div class="content">
-        <div class="aboutimg"><img class="about_img" src="./images/sepia_birds.jpeg" alt="鳥と女の子画像"></div>
+        <div class="aboutimg"><img class="about_img" src="./images/sepia_birds.webp" alt="鳥と女の子画像"></div>
         <div>
           <h1 class="content_title">contact</h1>
+          <p class="content_text">お問い合わせ</p>
           <p class="sub_contenttitle">-お仕事のご依頼・ご相談はこちらからお願い致します。-</p>
         </div>
         <div class="form_contents">
@@ -80,7 +81,7 @@
   </div>
 
 <!-- scriptタグはbody閉じタグの直前に置く -->
-<script src="./js/main.js"></script>
+<script src="./js/main.js" defer></script>
 </body>
 </html>
 

@@ -1,5 +1,9 @@
 @charset "utf-8";
 /* 全体 */
+body {
+  margin: 0;
+  padding: 0;
+}
 .container {
   font-family: 'Homemade Apple', cursive;
   display: none;
@@ -9,8 +13,7 @@
 }
 
 .maincontents {
-  width: 100%;
-  padding: 10px;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -22,12 +25,12 @@
 .logoimg {
   width: 40px;
   height: auto;
-  align-items: center;
+  vertical-align: middle;
 }
 
 .logotext {
   margin: auto 0;
-  color: rgb(87, 136, 143);
+  color: rgb(138, 117, 82);
   justify-content: center;
   text-decoration: none;
   font-size: 15px;
@@ -51,10 +54,10 @@
   /* flexの中で左右両端に */
   justify-content: space-between;
   width: 100%;
-  padding: 0 10px;
+  padding: 5px 10px;
   background-color: white;
-  opacity: 0.5;
   filter: grayscale(20%);
+  box-sizing: border-box;
 }
 
 .header-menu {
@@ -64,30 +67,25 @@
 /* top */
 .topcontents{
   width:100%;
-  height: 100vh;
+  height: 1100px;
   position: relative;
-} 
+}
 
-.topcontents::before{
-  content: '';
-  z-index: -1;
-  top: 5%;
-  left: 10%;
-  position: fixed;
-  width: 80%;
-  height: 100vh;
-  background-image: url(../images/sepia_angel.jpeg);
-  opacity: 0.5;
-  background-attachment: scroll;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+.topimg_area {
+  width: 100%;
+}
+
+.top_img {
+  width: 100%;
+  height: 1100px;
+  object-fit: cover;
+  opacity: 0.2;
 }
 
 .title_corner {
   position: absolute;
   text-align: left;
-  background-color: #fff;
+  background-color: none;
   padding: 10px;
   opacity: 0.7;
 }
@@ -160,8 +158,9 @@
 .scroll_icon {
   display: none;
   position: absolute;
-  top: 600px;
+  top: 650px;
   left: 50%;
+  translate: -50%;
 }
 
 /*Scrollテキストの描写*/
@@ -229,12 +228,9 @@ letter-spacing: 0.05em;
 .page_top {
   /* 常に表示 */
   position: fixed;
-  bottom: 40px;
-  right: 30px;
+  bottom: 80px;
   z-index: 80;
   opacity: 0.8;
-  /* 完全に中央に配置するため微調整 */
-  transform: translate(-20px);
 }
 
 .page_topLink {
@@ -279,6 +275,12 @@ letter-spacing: 0.05em;
   color: rgb(138, 117, 82);
 }
 
+.sub_contenttitle.works {
+  border-bottom: 0.7px solid rgb(138, 117, 82);
+  width: 40px;
+  margin: 0 auto;
+}
+
 .content_text {
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
@@ -294,23 +296,51 @@ letter-spacing: 0.05em;
 
 .galleryimg {
   margin: 30px 10px;
+  width: 90%;
   list-style: none;
 }
 
 .gallery_img {
+  width: 100%;
   opacity: 0.9;
 }
 
+.insta_area {
+  margin-top: 30px;
+}
+
 .instabtn_area {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .instagram_btn {
   border: none;
+  background: none;
+}
+
+.formjump_area {
+  margin-bottom: 30px;
+}
+
+.formjump_btn {
+  border: none;
+  padding: 5px 8px;
+  background-color: rgb(138, 117, 82);
+}
+
+.formjump_btn:hover {
+  opacity: 0.5;
+}
+
+.formjump_link {
+  text-decoration: none;
+  color: white;
+  font-size: 11px;
 }
 
 .instalogo {
   width: 30px;
+  height: auto;
   opacity: 0.8;
 }
 
@@ -352,13 +382,12 @@ letter-spacing: 0.05em;
 }
 
 .form_btn {
-  background-color: rgb(188, 123, 144);
+  background-color: rgb(138, 117, 82);
   color: #fff;
   text-align: center;
   border: none;
   margin-top: 10px;
   padding: 5px 10px;
-  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -407,7 +436,7 @@ textarea {
 /* confirm */
 .return_btn {
   display: inline-block;
-  background-color: rgb(188, 123, 144);
+  background-color: rgb(138, 117, 82);
   color: #fff;
   margin: 20px auto;
   padding: 2px 8px;
@@ -424,20 +453,20 @@ textarea {
 .footer_content {
   background-color: white;
   width: 100%;
-  padding: 10px 0;
   opacity: 0.5;
+  box-sizing: border-box;
 }
 
 .footer_text {
   text-align: left;
   margin-left: 20px;
   font-size: 10px;
-  color: rgb(87, 136, 143);
+  color: rgb(138, 117, 82);
 }
 
 .footertext {
   font-size: 13px;
-  color: rgb(87, 136, 143);
+  color: rgb(138, 117, 82);
   text-decoration: none;
 }
 
@@ -465,19 +494,23 @@ textarea {
   font-size: 13px;
 }
 
-
-
-
-
-
+.google_link {
+  color: rgb(138, 117, 82);
+}
 
 
 
 @media screen and (min-width: 796px) { /* pc用スタイル */
   /* headerエリア */
+  .header_content {
+    opacity: 0.8;
+  }
+
   .menu-content_box {
+    padding: 0;
     display: flex;
-    margin-right: 20px;
+    align-items: center;
+    margin-right: 40px;
   }
   
   .menu-content_text {
@@ -486,17 +519,24 @@ textarea {
   
   .menubtn {
     margin: 10px 20px;
-    color: rgb(87, 136, 143);
     text-decoration: none;
-    font-size: 13px;
+    color: rgb(138, 117, 82);
+    font-size: 10px;
     transition: all 0.7s;
   }
   
   .menubtn:hover {
     padding: 1px 10px;
-    background-color: rgb(188, 123, 144);
-    color: #fff;
-    border-radius:12px;
+    color: rgb(188, 123, 144);
+    border-bottom: 0.5px solid rgb(188, 123, 144);
+  }
+
+  .hamburger-menu {
+    max-width: 530px;
+  }
+
+  .logoarea {
+    padding-left: 40px;
   }
 
   /* top */
@@ -511,6 +551,11 @@ textarea {
 
   .sub_title {
     font-size: 16px;
+  }
+
+  /* page top */
+  .page_top {
+    right: 50px;
   }
 
   /* contents */
@@ -534,7 +579,6 @@ textarea {
     width: 100%;
     height: 150px;
     object-fit: cover;
-    border-radius: 5px;
   }
 
   /* about */
@@ -564,19 +608,21 @@ textarea {
     width: 500px;
     height: 100px;
   }
+
+  .footer_content {
+    padding: 10px 40px;
+  }
 }
-
-
-
-
-
-
 
 
 
 
 @media screen and (max-width: 795px) { /* sp用スタイル */
   /* headerエリア */
+  .header_content {
+    opacity: 0.9;
+  }
+
   /* ハンバーガーメニュー3本線の背景 */
   .menu-btn {
     position: fixed;
@@ -599,7 +645,7 @@ textarea {
     /* 3本線を右揃え */
     right: 0;
     border-radius: 2px;
-    background-color: rgb(87, 136, 143);
+    background-color: rgb(138, 117, 82);
     position: absolute;
   }
 
@@ -610,7 +656,7 @@ textarea {
     width: 25px;
     right: 0;
     border-radius: 2px;
-    background-color: rgb(87, 136, 143);
+    background-color: rgb(138, 117, 82);
     position: absolute;
   }
 
@@ -621,7 +667,7 @@ textarea {
     width: 20px;
     right: 0;
     border-radius: 2px;
-    background-color: rgb(87, 136, 143);
+    background-color: rgb(138, 117, 82);
     position: absolute;
   }
 
@@ -653,7 +699,8 @@ textarea {
   }
 
   .menu-content {
-    width: 80%;
+    width: 100%;
+    height: 1000px;
     position: fixed;
     top: 0;
     /* メニューが閉じている時は表示枠外にメニューバーを隠す */
@@ -663,14 +710,12 @@ textarea {
     transition: all 0.9s;
   }
 
-  .menu-content_box {
-    padding: 70px 10px 0 0;
-    margin: 0;
-  }
-
   .menu-content_box,.menu-content_text {
-    border-bottom: dotted 1px white;
+    border-bottom: none;
     list-style: none;
+    margin: 30px 0;
+    text-align: center;
+    opacity: 0.9;
   }
 
   .menu-btn {
@@ -691,17 +736,29 @@ textarea {
 
   /* クリックされたらメニューを表示する */
   #menu-btn-check:checked ~ .menu-content {
-    left: 20%;
+    left: 0;
+    width: 100%;
+    height: 1000px;
   }
 
   .header_content {
     display: flex;
+    padding: 5px 0;
     width: 100%;
+  }
+
+  .logoarea {
+    padding-left: 30px;
+  }
+
+  /* page top */
+  .page_top {
+    right: 25px;
   }
 
   /* top */
   .title_corner {
-    margin: 0 auto;
+    margin: 0;
     top: 15%;
   }
 
@@ -729,9 +786,14 @@ textarea {
   }
 
   .gallery_img {
-    width: 90%;
+    width: 100%;
+    height: auto;
     object-fit: cover;
-    border-radius: 5px;
+  }
+
+  .galleryimg {
+    width: 100%;
+    margin: 0 auto;
   }
 
   /* about */
@@ -756,5 +818,9 @@ textarea {
   textarea {
     width: 300px;
     height: 80px;
+  }
+
+  .footer_content {
+    padding: 10px 20px;
   }
 }

@@ -5,6 +5,7 @@ $email = $_POST['email'];
 $message = $_POST['message'];
 ?>
 
+
 <!DOCTYPE html>
 <html lang="ja" dir="ltr">
 <head>
@@ -22,16 +23,9 @@ $message = $_POST['message'];
   <meta property="og:title" content="monamiのartgallery&work紹介サイト" />
   <meta property="og:description" content="デジタルイラストを作成しています。出展の情報なども随時記載しています。" />
   <meta property="og:image" content="https://www.monami-artgallery.net/images/angel.jpeg" />
-
-  <link rel="icon" href="./images/top2.jpeg">
-  <link rel="stylesheet" href="./css/style.css">
-  <!-- google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
-   <!-- jQueryの読み込み -->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- google adsense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8020517822869630"
+    crossorigin="anonymous"></script>
    <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-DRE10HFZCQ"></script>
   <script>
@@ -41,6 +35,15 @@ $message = $_POST['message'];
 
     gtag('config', 'G-DRE10HFZCQ');
   </script>
+  <link rel="icon" href="./images/top2.webp">
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+   <!-- jQueryの読み込み -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
   <div class="container">
@@ -51,7 +54,8 @@ $message = $_POST['message'];
     <div class="contents">
       <div class="content">
         <div>
-          <h1 class="content_title">確認画面</h1>
+          <h1 class="content_title">Confirmation</h1>
+          <p class="content_text">確認</p>
         </div>
         <div class="form_contents">
           <form action="send.php" method="post" name="form" required onsubmit="return validate()">
@@ -75,7 +79,6 @@ $message = $_POST['message'];
           <input type="hidden" name="fullname" value="<?php echo $fullname; ?>">
           <input type="hidden" name="email" value="<?php echo $email; ?>">
           <input type="hidden" name="message" value="<?php echo $message; ?>">
-
           <button class="form_btn back"  type="button" onclick="history.back()">戻る</button>
           <button class="form_btn" type="submit">送信</button>
           </form>
@@ -88,6 +91,6 @@ $message = $_POST['message'];
   </div>
 
 <!-- scriptタグはbody閉じタグの直前に置く -->
-<script src="./js/main.js"></script>
+<script src="./js/main.js" defer></script>
 </body>
 </html>

@@ -15,19 +15,9 @@
   <meta property="og:title" content="monamiのartgallery&work紹介サイト" />
   <meta property="og:description" content="デジタルイラストを作成しています。出展の情報なども随時記載しています。" />
   <meta property="og:image" content="https://www.monami-artgallery.net/images/angel.jpeg" />
-
-  <link rel="icon" href="./images/top2.jpeg">
-  <link rel="stylesheet" href="./css/style.css">
-  <!-- google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
-   <!-- jQueryの読み込み -->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- google adsense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8020517822869630"
-  crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
    <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-DRE10HFZCQ"></script>
   <script>
@@ -37,6 +27,16 @@
 
     gtag('config', 'G-DRE10HFZCQ');
   </script>
+  
+  <link rel="icon" href="./images/top2.webp">
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+   <!-- jQueryの読み込み -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
   <div class="container">
@@ -46,12 +46,13 @@
 
     <div class="contents">
         <div class="content">
-          <div class="aboutimg"><img class="about_img" src="./images/sepia_akazukin.jpeg" alt="赤ずきんの画像"></div>
+          <div class="aboutimg"><img class="about_img" src="./images/sepia_akazukin.webp" alt="赤ずきんの画像"></div>
           <div class="info_title">
             <h2 class="content_title">information</h2>
+            <p class="content_text">お知らせ</p>
             <p class="sub_contenttitle">-出展予定などの情報をお知らせ致します-</p>
             <p class="content_text">最新情報はinstagramでもご確認いただけます</p>
-            <div class="instabtn_area"><button class="instagram_btn"><a class="instagram_link" href="https://www.instagram.com/monami283103/?r=nametag" target="_blank" rel="noopener"><img class="instalogo" src="./images/insta2.png"></a></button></div>
+            <div class="instabtn_area"><button class="instagram_btn"><a class="instagram_link" href="https://www.instagram.com/monami283103/?r=nametag" target="_blank" rel="noopener"><img class="instalogo" src="./images/insta2.webp"></a></button></div>
           </div>
             <ul class="info_list">
               <li class="info_item">
@@ -75,6 +76,6 @@
     <?php include('footer.php'); ?>
   </div>
 
-<script src="./js/main.js"></script>
+<script src="./js/main.js" defer></script>
 </body>
 </html>
