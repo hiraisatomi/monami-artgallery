@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>monami's room</title>
+  <title>monami's room &#124; お知らせ</title>
   <!-- description -->
   <meta name="description" content="webデザイナー/イラストレーター monamiのartgallery&work紹介のサイトです。">
 
@@ -51,9 +51,23 @@
             <h2 class="content_title">information</h2>
             <p class="content_text">お知らせ</p>
             <p class="sub_contenttitle">-出展予定などの情報をお知らせ致します-</p>
-            <p class="content_text">最新情報はinstagramでもご確認いただけます</p>
+            <p class="content_text">最新情報は<a class="insta_link" href="https://www.instagram.com/monami283103/?r=nametag" target="_blank" rel="noopener">instagram</a>でもご確認いただけます</p>
             <div class="instabtn_area"><button class="instagram_btn"><a class="instagram_link" href="https://www.instagram.com/monami283103/?r=nametag" target="_blank" rel="noopener"><img class="instalogo" src="./images/insta2.webp"></a></button></div>
           </div>
+          <ul class="info_list">
+              <li class="info_item">
+                <p class="date">2023/03/21</p>
+                <p class="category"><span>【出展情報】</span></p>
+                <p class="info">2023.03.25~04.02 東京渋谷のBoji hair +gallery様主催『Flower展』に作品を出展します。</p>
+              </li>
+            </ul>
+            <ul class="info_list">
+              <li class="info_item">
+                <p class="date">2023/03/21</p>
+                <p class="category"><span>【出展情報】</span></p>
+                <p class="info">2023.03.22~04.04 大森駅「個」ワーキングスペース グランワークにてcurrent様主催『デジアルプロジェクト』に作品を出展します。</p>
+              </li>
+            </ul>
             <ul class="info_list">
               <li class="info_item">
                 <p class="date">2022/10/11</p>

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>monami's room</title>
+  <title>monami's room &#124; Home</title>
   <!-- description -->
   <meta name="description" content="artist〈webデザイナー/イラストレーター〉monamiのartgallery&ポートフォリオサイトです。">
     <!--SNSでシェアされた時のタグ-->
@@ -60,7 +60,7 @@
             <h2 class="content_title">gallery&portfolio</h2>
             <p class="sub_contenttitle">-過去のイラスト＆お仕事一覧-</p>
               <div class="menu">
-                <p class="sub_contenttitle">-illust-</p>
+                <p class="sub_contenttitle sub">-illust-</p>
                   <ul class="gallery">
                     <li class="galleryimg"><img class="gallery_img" src="./images/horn.webp" alt="ホルン吹きの女の子"></li>
                     <li class="galleryimg"><img class="gallery_img" src="./images/tulip.webp" alt="チューリップ畑の上の女の子"></li>
@@ -70,6 +70,10 @@
                     <li class="galleryimg"><img class="gallery_img" src="./images/akazukin.webp" alt="赤ずきんな女の子とdance flower"></li>
                     <li class="galleryimg"><img class="gallery_img" src="./images/wrap-flowers.webp" alt="花に包まれた女の子"></li>
                     <li class="galleryimg"><img class="gallery_img" src="./images/cosmos.webp" alt="コスモスと女の子"></li>
+                    <li class="galleryimg"><img class="gallery_img" src="./images/warmlight.webp" alt="温かな灯"></li>
+                    <li class="galleryimg"><img class="gallery_img" src="./images/musical-girl.webp" alt="音符ヘアスタイルの女の子"></li>
+                    <li class="galleryimg"><img class="gallery_img" src="./images/1111-girl.webp" alt="ポッキーの日の女の子"></li>
+                    <li class="galleryimg"><img class="gallery_img" src="./images/autumn-girl.webp" alt="秋を見つめる女の子"></li>
                     <li class="galleryimg"><img class="gallery_img" src="./images/flower-girl.webp" alt="花と女の子"></li>
                     <li class="galleryimg"><img class="gallery_img" src="./images/flower-girl2.webp" alt="花と麦わら帽子の女の子"></li>
                     <li class="galleryimg"><img class="gallery_img" src="./images/constellation.webp" alt="星座前半"></li>
@@ -77,7 +81,7 @@
                   </ul>
               </div>
               <div class="menu">
-                <p class="sub_contenttitle">-works-</p>
+                <p class="sub_contenttitle sub">-works-</p>
                 <!-- <p class="sub_contenttitle works">web site</p>
                 <ul class="gallery">
                   <li class="galleryimg"><a href="" target="_blank" rel="noopener"><img class="gallery_img" src="" alt=""></a></li>
@@ -90,7 +94,7 @@
                 </ul>
                 <div class="formjump_area"><button class="formjump_btn"><a class="formjump_link" href="./contact.php">サイト作成・イラストのご依頼＆ご相談はこちら</a></button></div>
                 <div class="insta_area">
-                  <p class="content_text">他作品や過去のお仕事はinstagramでもご覧頂けます</p>
+                  <p class="content_text">他作品や過去のお仕事は<a class="insta_link" href="https://www.instagram.com/monami283103/?r=nametag" target="_blank" rel="noopener">instagram</a>でもご覧頂けます</p>
                   <div class="instabtn_area"><button class="instagram_btn"><a class="instagram_link" href="https://www.instagram.com/monami283103/?r=nametag" target="_blank" rel="noopener"><img class="instalogo" src="./images/insta2.webp" alt="インスタロゴ"></a></button></div>
                 </div>
               </div>

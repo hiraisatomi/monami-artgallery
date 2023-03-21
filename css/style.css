@@ -30,7 +30,7 @@ body {
 
 .logotext {
   margin: auto 0;
-  color: rgb(138, 117, 82);
+  color: rgb(115, 101, 76);
   justify-content: center;
   text-decoration: none;
   font-size: 15px;
@@ -97,7 +97,7 @@ body {
   display:inline-block;
   margin:0 10px;
   text-decoration: none;
-  color: rgb(87, 136, 143);
+  color: rgb(73, 108, 123);
   outline: none;
 }
 
@@ -113,7 +113,7 @@ body {
   left:30%;
   top:0;
   /*波形の形状*/
-  border: 1px solid rgb(138, 117, 82);
+  border: 1px solid rgb(115, 101, 76);
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -139,7 +139,7 @@ body {
   display: none;
   margin: 0;
   font-size: 36px;
-  color: rgb(87, 136, 143);
+  color: rgb(73, 108, 123);
 }
 
 .sub_title {
@@ -147,7 +147,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   display: none;
   margin: unset;
-  color: rgb(138, 117, 82);
+  color: rgb(115, 101, 76);
 }
 
 .monami_img {
@@ -170,7 +170,7 @@ position: absolute;
 left: 10px;
 bottom: 10px;
   /*テキストの形状*/
-color: rgb(87, 136, 143);
+color: rgb(73, 108, 123);
 font-size: 0.6rem;
 letter-spacing: 0.05em;
 /*縦書き設定*/
@@ -190,7 +190,7 @@ letter-spacing: 0.05em;
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: rgb(87, 136, 143);
+  background: rgb(73, 108, 123);
     /*丸の動き1.6秒かけて透過し、永遠にループ*/
   animation:
   circlemove 1.8s ease-in-out infinite,
@@ -221,7 +221,7 @@ letter-spacing: 0.05em;
     /*線の形状*/
   width: 2px;
   height: 45px;
-  background:rgb(87, 136, 143);
+  background:rgb(73, 108, 123);
 }
 
 /* TOPへ戻るボタン */
@@ -234,19 +234,22 @@ letter-spacing: 0.05em;
 }
 
 .page_topLink {
-  background-color: rgb(188, 123, 144);
-  color: #fff;
+  color: rgb(73, 108, 123);
   filter: grayscale(30%);
   text-align: center;
   text-decoration: none;
-  padding: 15px;
-  border-radius: 50%;
-  font-size: 12px;
+  font-size: 16px;
 }
 
-.page_topLink:hover {
-  background-color: rgb(87, 136, 143);
-  text-decoration: none;
+.page_topLink::before {
+  content: "/";
+  position: absolute;
+  top: 60%;
+  left: 20%;
+  color: rgb(73, 108, 123);
+  filter: grayscale(30%);
+  transform: rotate(45deg);
+  font-size: 16px;
 }
 
 /* contentエリア全体 */
@@ -264,7 +267,7 @@ letter-spacing: 0.05em;
   margin-bottom: 0;
   text-align: center;
   font-size: 24px;
-  color: rgb(138, 117, 82);
+  color: rgb(115, 101, 76);
 }
 
 .sub_contenttitle {
@@ -272,19 +275,24 @@ letter-spacing: 0.05em;
   margin-top: 0;
   margin-bottom: 50px;
   text-align: center;
-  color: rgb(138, 117, 82);
+  font-size: 13px;
+  color: rgb(115, 101, 76);
+}
+
+.sub_contenttitle.sub {
+  font-size: 22px;
 }
 
 .sub_contenttitle.works {
-  border-bottom: 0.7px solid rgb(138, 117, 82);
-  width: 40px;
+  border-bottom: 0.7px solid rgb(115, 101, 76);
+  width: 60px;
   margin: 0 auto;
 }
 
 .content_text {
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
-  color: rgb(138, 117, 82);
+  color: rgb(115, 101, 76);
   max-width: 800px;
   margin: 0 auto;
 }
@@ -313,6 +321,11 @@ letter-spacing: 0.05em;
   margin-top: 10px;
 }
 
+.insta_link {
+  text-decoration: none;
+  color: rgb(115, 101, 76);
+}
+
 .instagram_btn {
   border: none;
   background: none;
@@ -324,12 +337,13 @@ letter-spacing: 0.05em;
 
 .formjump_btn {
   border: none;
-  padding: 5px 8px;
-  background-color: rgb(138, 117, 82);
+  padding: 8px 10px;
+  background-color: rgb(115, 101, 76);
 }
 
 .formjump_btn:hover {
   opacity: 0.5;
+  transition: all 0.5s;
 }
 
 .formjump_link {
@@ -353,7 +367,7 @@ letter-spacing: 0.05em;
   list-style: none;
   padding: 0;
   margin-top: 30px;
-  color: rgb(138, 117, 82);
+  color: rgb(115, 101, 76);
   font-size: 13px;
   border-top: 1px dotted rgb(56, 56, 56);
 }
@@ -370,7 +384,7 @@ letter-spacing: 0.05em;
 .form_contents{
   margin: 0 auto;
   font-size: 14px;
-  color: rgb(138, 117, 82);
+  color: rgb(115, 101, 76);
 }
 
 .form_content {
@@ -382,7 +396,7 @@ letter-spacing: 0.05em;
 }
 
 .form_btn {
-  background-color: rgb(138, 117, 82);
+  background-color: rgb(115, 101, 76);
   color: #fff;
   text-align: center;
   border: none;
@@ -392,20 +406,20 @@ letter-spacing: 0.05em;
 }
 
 .form_btn.back {
-  background-color: rgb(138, 117, 82);
+  background-color: rgb(115, 101, 76);
 }
 
 .form_contents input[type="text"] {
   background-color: white;
   border: 1px dotted rgb(56, 56, 56);
-  color: rgb(138, 117, 82);
+  color: rgb(115, 101, 76);
 }
 
 .form_contents input[type="email"] {
   background-color: white;
   width: 250px;
   border: 1px dotted rgb(56, 56, 56);
-  color: rgb(138, 117, 82);
+  color: rgb(115, 101, 76);
 }
 
 textarea {
@@ -413,7 +427,7 @@ textarea {
   resize: none;
   background-color: white;
   border: 1px dotted rgb(56, 56, 56);
-  color: rgb(138, 117, 82);
+  color: rgb(115, 101, 76);
 }
 
 .form_contents textarea.standard {
@@ -421,12 +435,12 @@ textarea {
   overflow: auto;
   width: 300px;
   height: 100px;
-  background-color: rgb(87, 136, 143);
+  background-color: rgb(73, 108, 123);
   border: none;
 }
 
 .form_contents placeholder {
-  color: rgb(138, 117, 82);
+  color: rgb(115, 101, 76);
 }
 
 .form_label {
@@ -436,7 +450,7 @@ textarea {
 /* confirm */
 .return_btn {
   display: inline-block;
-  background-color: rgb(138, 117, 82);
+  background-color: rgb(115, 101, 76);
   color: #fff;
   margin: 20px auto;
   padding: 2px 8px;
@@ -461,12 +475,12 @@ textarea {
   text-align: left;
   margin-left: 20px;
   font-size: 10px;
-  color: rgb(138, 117, 82);
+  color: rgb(115, 101, 76);
 }
 
 .footertext {
   font-size: 13px;
-  color: rgb(138, 117, 82);
+  color: rgb(115, 101, 76);
   text-decoration: none;
 }
 
@@ -485,17 +499,17 @@ textarea {
 
 .policy_title {
   font-family: 'Montserrat', sans-serif;
-  color: rgb(138, 117, 82);
+  color: rgb(115, 101, 76);
 }
 
 .policy_text {
   font-family: 'Montserrat', sans-serif;
-  color: rgb(138, 117, 82);
+  color: rgb(115, 101, 76);
   font-size: 13px;
 }
 
 .google_link {
-  color: rgb(138, 117, 82);
+  color: rgb(115, 101, 76);
 }
 
 
@@ -520,7 +534,7 @@ textarea {
   .menubtn {
     margin: 10px 20px;
     text-decoration: none;
-    color: rgb(138, 117, 82);
+    color: rgb(115, 101, 76);
     font-size: 10px;
     transition: all 0.7s;
   }
@@ -645,7 +659,7 @@ textarea {
     /* 3本線を右揃え */
     right: 0;
     border-radius: 2px;
-    background-color: rgb(138, 117, 82);
+    background-color: rgb(115, 101, 76);
     position: absolute;
   }
 
@@ -656,7 +670,7 @@ textarea {
     width: 25px;
     right: 0;
     border-radius: 2px;
-    background-color: rgb(138, 117, 82);
+    background-color: rgb(115, 101, 76);
     position: absolute;
   }
 
@@ -667,7 +681,7 @@ textarea {
     width: 20px;
     right: 0;
     border-radius: 2px;
-    background-color: rgb(138, 117, 82);
+    background-color: rgb(115, 101, 76);
     position: absolute;
   }
 
@@ -706,7 +720,7 @@ textarea {
     /* メニューが閉じている時は表示枠外にメニューバーを隠す */
     left: 100%;
     z-index: 80;
-    background-color: rgb(87, 136, 143);
+    background-color: rgb(73, 108, 123);
     transition: all 0.9s;
   }
 
@@ -773,11 +787,6 @@ textarea {
 
   .sub_title {
     font-size: 14px;
-  }
-
-  /* contents */
-  .sub_contenttitle {
-    font-size: 13px;
   }
 
   /* gallery */
