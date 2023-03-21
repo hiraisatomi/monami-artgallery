@@ -46,7 +46,7 @@
 
     <div class="contents">
       <div class="content">
-        <div class="aboutimg"><img class="about_img" src="./images/sepia_birds.webp" alt="鳥と女の子画像"></div>
+        <div class="aboutimg"><img class="about_img" src="./images/moon-girl.jpeg" alt="月と女の子画像"></div>
         <div>
           <h1 class="content_title">contact</h1>
           <p class="content_text">お問い合わせ</p>

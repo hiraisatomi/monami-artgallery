@@ -46,7 +46,7 @@
 
     <div class="contents">
         <div class="content privacy">
-          <div class="aboutimg"><img class="about_img" src="./images/autumn.webp" alt="赤ずきんの画像"></div>
+          <div class="aboutimg"><img class="about_img" src="./images/pink-girl.jpeg" alt="top画像"></div>
           <div class="policytitle_content">
             <h2 class="content_title">privacypolicy</h2>
             <p class="content_text">プライバシーポリシー</p>

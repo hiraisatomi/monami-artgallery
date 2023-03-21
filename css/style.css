@@ -5,10 +5,10 @@ body {
   padding: 0;
 }
 .container {
-  font-family: 'Homemade Apple', cursive;
+  font-family: "Homemade Apple", cursive;
   display: none;
   position: relative;
-  z-index:1;
+  z-index: 1;
   overflow: hidden;
 }
 
@@ -30,7 +30,7 @@ body {
 
 .logotext {
   margin: auto 0;
-  color: rgb(115, 101, 76);
+  color: #858585;
   justify-content: center;
   text-decoration: none;
   font-size: 15px;
@@ -65,8 +65,8 @@ body {
 }
 
 /* top */
-.topcontents{
-  width:100%;
+.topcontents {
+  width: 100%;
   height: 1100px;
   position: relative;
 }
@@ -79,25 +79,25 @@ body {
   width: 100%;
   height: 1100px;
   object-fit: cover;
-  opacity: 0.2;
+  opacity: 0.6;
 }
 
 .title_corner {
   position: absolute;
   text-align: left;
   background-color: none;
-  padding: 10px;
+  padding: 20px 40px;
   opacity: 0.7;
 }
 
-.title.top{
+.title.top {
   /*波紋の基点とするためrelativeを指定*/
   position: relative;
   /*リンクの形状*/
-  display:inline-block;
-  margin:0 10px;
+  display: inline-block;
+  margin: 0 10px;
   text-decoration: none;
-  color: rgb(73, 108, 123);
+  color: #858585;
   outline: none;
 }
 
@@ -107,31 +107,31 @@ body {
 
 /*波形の設定*/
 .title.top:hover::before {
-  content: '';
+  content: "";
   /*絶対配置で波形の位置を決める*/
   position: absolute;
-  left:30%;
-  top:0;
+  left: 30%;
+  top: 0;
   /*波形の形状*/
-  border: 1px solid rgb(115, 101, 76);
+  border: 1px solid #858585;
   width: 60px;
   height: 60px;
   border-radius: 50%;
   /*はじめは不透明*/
-  opacity:1;
+  opacity: 1;
   /*アニメーションの設定*/
-  animation:1.5s circleanime2 forwards;
+  animation: 1.5s circleanime2 forwards;
 }
 
 /*波形が広がるアニメーション*/
-@keyframes circleanime2{
-0%{
-  transform: scale(0);
-}
-100%{
-  transform:scale(2.5);
-  opacity: 0;
-}
+@keyframes circleanime2 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
 }
 
 .title {
@@ -139,15 +139,15 @@ body {
   display: none;
   margin: 0;
   font-size: 36px;
-  color: rgb(73, 108, 123);
+  color: #6e8d96;
 }
 
 .sub_title {
   /* fadeInのために最初は非表示 */
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   display: none;
   margin: unset;
-  color: rgb(115, 101, 76);
+  color: #858585;
 }
 
 .monami_img {
@@ -164,17 +164,17 @@ body {
 }
 
 /*Scrollテキストの描写*/
-.scroll_icon span{
+.scroll_icon span {
   /*描画位置*/
-position: absolute;
-left: 10px;
-bottom: 10px;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
   /*テキストの形状*/
-color: rgb(73, 108, 123);
-font-size: 0.6rem;
-letter-spacing: 0.05em;
-/*縦書き設定*/
--ms-writing-mode: tb-rl;
+  color: #6e8d96;
+  font-size: 0.6rem;
+  letter-spacing: 0.05em;
+  /*縦書き設定*/
+  -ms-writing-mode: tb-rl;
   -webkit-writing-mode: vertical-rl;
   writing-mode: vertical-rl;
 }
@@ -190,38 +190,49 @@ letter-spacing: 0.05em;
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: rgb(73, 108, 123);
-    /*丸の動き1.6秒かけて透過し、永遠にループ*/
-  animation:
-  circlemove 1.8s ease-in-out infinite,
-  cirlemovehide 1.8s ease-out infinite;
+  background: #6e8d96;
+  /*丸の動き1.6秒かけて透過し、永遠にループ*/
+  animation: circlemove 1.8s ease-in-out infinite,
+    cirlemovehide 1.8s ease-out infinite;
 }
 
 /*下からの距離が変化して丸の全体が上から下に動く*/
-@keyframes circlemove{
-  0%{bottom: 45px;}
- 100%{bottom: -5px;}
+@keyframes circlemove {
+  0% {
+    bottom: 45px;
+  }
+  100% {
+    bottom: -5px;
+  }
 }
 
 /*上から下にかけて丸が透過→不透明→透過する*/
-@keyframes cirlemovehide{
-   0%{opacity:0}
-  50%{opacity:1;}
- 80%{opacity:0.9;}
-100%{opacity:0;}
+@keyframes cirlemovehide {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 /* 線の描写 */
-.scroll_icon:after{
-  content:"";
-    /*描画位置*/
+.scroll_icon:after {
+  content: "";
+  /*描画位置*/
   position: absolute;
   bottom: 0;
   left: 0;
-    /*線の形状*/
+  /*線の形状*/
   width: 2px;
   height: 45px;
-  background:rgb(73, 108, 123);
+  background: #6e8d96;
 }
 
 /* TOPへ戻るボタン */
@@ -234,7 +245,7 @@ letter-spacing: 0.05em;
 }
 
 .page_topLink {
-  color: rgb(73, 108, 123);
+  color: #6e8d96;
   filter: grayscale(30%);
   text-align: center;
   text-decoration: none;
@@ -246,7 +257,7 @@ letter-spacing: 0.05em;
   position: absolute;
   top: 60%;
   left: 20%;
-  color: rgb(73, 108, 123);
+  color: #6e8d96;
   filter: grayscale(30%);
   transform: rotate(45deg);
   font-size: 16px;
@@ -267,16 +278,16 @@ letter-spacing: 0.05em;
   margin-bottom: 0;
   text-align: center;
   font-size: 24px;
-  color: rgb(115, 101, 76);
+  color: #858585;
 }
 
 .sub_contenttitle {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin-top: 0;
   margin-bottom: 50px;
   text-align: center;
   font-size: 13px;
-  color: rgb(115, 101, 76);
+  color: #858585;
 }
 
 .sub_contenttitle.sub {
@@ -284,15 +295,15 @@ letter-spacing: 0.05em;
 }
 
 .sub_contenttitle.works {
-  border-bottom: 0.7px solid rgb(115, 101, 76);
+  border-bottom: 0.7px solid #858585;
   width: 60px;
   margin: 0 auto;
 }
 
 .content_text {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 12px;
-  color: rgb(115, 101, 76);
+  color: #858585;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -323,7 +334,7 @@ letter-spacing: 0.05em;
 
 .insta_link {
   text-decoration: none;
-  color: rgb(115, 101, 76);
+  color: #858585;
 }
 
 .instagram_btn {
@@ -338,7 +349,7 @@ letter-spacing: 0.05em;
 .formjump_btn {
   border: none;
   padding: 8px 10px;
-  background-color: rgb(115, 101, 76);
+  background-color: #858585;
 }
 
 .formjump_btn:hover {
@@ -367,24 +378,24 @@ letter-spacing: 0.05em;
   list-style: none;
   padding: 0;
   margin-top: 30px;
-  color: rgb(115, 101, 76);
+  color: #858585;
   font-size: 13px;
-  border-top: 1px dotted rgb(56, 56, 56);
+  border-top: 1px dotted #858585;
 }
 
 .info_list:last-child {
-  border-bottom: 1px dotted rgb(56, 56, 56);
+  border-bottom: 1px dotted #858585;
 }
 
 .info {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* form */
-.form_contents{
+.form_contents {
   margin: 0 auto;
   font-size: 14px;
-  color: rgb(115, 101, 76);
+  color: #858585;
 }
 
 .form_content {
@@ -396,7 +407,7 @@ letter-spacing: 0.05em;
 }
 
 .form_btn {
-  background-color: rgb(115, 101, 76);
+  background-color: #858585;
   color: #fff;
   text-align: center;
   border: none;
@@ -406,28 +417,28 @@ letter-spacing: 0.05em;
 }
 
 .form_btn.back {
-  background-color: rgb(115, 101, 76);
+  background-color: #858585;
 }
 
 .form_contents input[type="text"] {
   background-color: white;
-  border: 1px dotted rgb(56, 56, 56);
-  color: rgb(115, 101, 76);
+  border: 1px dotted #858585;
+  color: #858585;
 }
 
 .form_contents input[type="email"] {
   background-color: white;
   width: 250px;
-  border: 1px dotted rgb(56, 56, 56);
-  color: rgb(115, 101, 76);
+  border: 1px dotted #858585;
+  color: #858585;
 }
 
 textarea {
   padding: 5px;
   resize: none;
   background-color: white;
-  border: 1px dotted rgb(56, 56, 56);
-  color: rgb(115, 101, 76);
+  border: 1px dotted #858585;
+  color: #858585;
 }
 
 .form_contents textarea.standard {
@@ -435,12 +446,12 @@ textarea {
   overflow: auto;
   width: 300px;
   height: 100px;
-  background-color: rgb(73, 108, 123);
+  background-color: #6e8d96;
   border: none;
 }
 
 .form_contents placeholder {
-  color: rgb(115, 101, 76);
+  color: #858585;
 }
 
 .form_label {
@@ -450,7 +461,7 @@ textarea {
 /* confirm */
 .return_btn {
   display: inline-block;
-  background-color: rgb(115, 101, 76);
+  background-color: #858585;
   color: #fff;
   margin: 20px auto;
   padding: 2px 8px;
@@ -475,12 +486,12 @@ textarea {
   text-align: left;
   margin-left: 20px;
   font-size: 10px;
-  color: rgb(115, 101, 76);
+  color: #858585;
 }
 
 .footertext {
   font-size: 13px;
-  color: rgb(115, 101, 76);
+  color: #858585;
   text-decoration: none;
 }
 
@@ -498,23 +509,22 @@ textarea {
 }
 
 .policy_title {
-  font-family: 'Montserrat', sans-serif;
-  color: rgb(115, 101, 76);
+  font-family: "Montserrat", sans-serif;
+  color: #858585;
 }
 
 .policy_text {
-  font-family: 'Montserrat', sans-serif;
-  color: rgb(115, 101, 76);
+  font-family: "Montserrat", sans-serif;
+  color: #858585;
   font-size: 13px;
 }
 
 .google_link {
-  color: rgb(115, 101, 76);
+  color: #858585;
 }
 
-
-
-@media screen and (min-width: 796px) { /* pc用スタイル */
+@media screen and (min-width: 796px) {
+  /* pc用スタイル */
   /* headerエリア */
   .header_content {
     opacity: 0.8;
@@ -526,23 +536,23 @@ textarea {
     align-items: center;
     margin-right: 40px;
   }
-  
+
   .menu-content_text {
     list-style: none;
   }
-  
+
   .menubtn {
     margin: 10px 20px;
     text-decoration: none;
-    color: rgb(115, 101, 76);
+    color: #858585;
     font-size: 10px;
     transition: all 0.7s;
   }
-  
+
   .menubtn:hover {
     padding: 1px 10px;
-    color: rgb(188, 123, 144);
-    border-bottom: 0.5px solid rgb(188, 123, 144);
+    color: #d9c9ca;
+    border-bottom: 0.5px solid #d9c9ca;
   }
 
   .hamburger-menu {
@@ -555,7 +565,7 @@ textarea {
 
   /* top */
   .title_corner {
-    top:20%;
+    top: 20%;
     left: 15%;
   }
 
@@ -582,7 +592,6 @@ textarea {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
   }
 
   .galleryimg {
@@ -628,10 +637,8 @@ textarea {
   }
 }
 
-
-
-
-@media screen and (max-width: 795px) { /* sp用スタイル */
+@media screen and (max-width: 795px) {
+  /* sp用スタイル */
   /* headerエリア */
   .header_content {
     opacity: 0.9;
@@ -659,7 +666,7 @@ textarea {
     /* 3本線を右揃え */
     right: 0;
     border-radius: 2px;
-    background-color: rgb(115, 101, 76);
+    background-color: #858585;
     position: absolute;
   }
 
@@ -670,7 +677,7 @@ textarea {
     width: 25px;
     right: 0;
     border-radius: 2px;
-    background-color: rgb(115, 101, 76);
+    background-color: #858585;
     position: absolute;
   }
 
@@ -681,7 +688,7 @@ textarea {
     width: 20px;
     right: 0;
     border-radius: 2px;
-    background-color: rgb(115, 101, 76);
+    background-color: #858585;
     position: absolute;
   }
 
@@ -720,11 +727,12 @@ textarea {
     /* メニューが閉じている時は表示枠外にメニューバーを隠す */
     left: 100%;
     z-index: 80;
-    background-color: rgb(73, 108, 123);
+    background-color: #6e8d96;
     transition: all 0.9s;
   }
 
-  .menu-content_box,.menu-content_text {
+  .menu-content_box,
+  .menu-content_text {
     border-bottom: none;
     list-style: none;
     margin: 30px 0;
@@ -738,7 +746,9 @@ textarea {
     position: relative;
   }
 
-  .menu-content_box,.menu-content_text,.menubtn {
+  .menu-content_box,
+  .menu-content_text,
+  .menubtn {
     display: block;
     font-size: 13px;
     box-sizing: border-box;

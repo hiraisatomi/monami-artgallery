@@ -52,7 +52,7 @@
             <p class="content_text">お知らせ</p>
             <p class="sub_contenttitle">-出展予定などの情報をお知らせ致します-</p>
             <p class="content_text">最新情報は<a class="insta_link" href="https://www.instagram.com/monami283103/?r=nametag" target="_blank" rel="noopener">instagram</a>でもご確認いただけます</p>
-            <div class="instabtn_area"><button class="instagram_btn"><a class="instagram_link" href="https://www.instagram.com/monami283103/?r=nametag" target="_blank" rel="noopener"><img class="instalogo" src="./images/insta2.webp"></a></button></div>
+            <div class="instabtn_area"><button class="instagram_btn"><a class="instagram_link" href="https://www.instagram.com/monami283103/?r=nametag" target="_blank" rel="noopener"><img class="instalogo" src="./images/insta.webp"></a></button></div>
           </div>
           <ul class="info_list">
               <li class="info_item">
